@@ -1,0 +1,54 @@
+input[type=text], select {
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+body{
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: rgba( 71, 147, 227, 1);
+}
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: rgb(115, 162, 223);
+}
+.fl-table td, .fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #9e9999;
+    font-size: 16px;
+    font-family:monospace
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    background: silver;
+    font-size: 16px;
+    font-family:cursive;
+}
+@media (max-width: 700px) {
+    .fl-table {
+        display: block;
+        width: 100%;
+    }
+    .table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 11px;
+        color: rgb(104, 98, 197);
+        padding: 0 0 10px;
+    }
+   
+}

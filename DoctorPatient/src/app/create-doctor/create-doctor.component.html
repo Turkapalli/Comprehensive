@@ -1,0 +1,43 @@
+    <h2 class="text-center" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Enter Doctor Information</h2>
+<div class="doct">
+<div class="col-md-5 offset-md-4">
+    <br>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> Name:</label>
+            <input type="text" class ="form-control" id = "Name"
+                [(ngModel)] = "doctor.name" placeholder="Enter Name" name = "Name">
+        </div>
+        <div class="form-group">
+            <label> Age</label>
+            <input type="number" class ="form-control" id = "age"
+                [(ngModel)] = "doctor.age" placeholder="Enter Age" name = "age">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <div>
+                <div>
+                    <input id="Male" type="radio" value="Male" [(ngModel)] = "doctor.gender" name="gender" >
+                    <label for="Male">Male</label>
+                </div>
+                <div>
+                    <input id="Female" type="radio" value="Female" [(ngModel)] = "doctor.gender" name="gender">
+                    <label for="Female">Female</label>
+                </div>
+            </div>
+            </div>
+            <div class="form-group">
+                <label>Specialist</label>
+                <input type="text" class ="form-control" id = "specialist"
+                    [(ngModel)] = "doctor.specialist" placeholder="Specialist" name = "specialist">
+            </div>
+            <div class="form-group">
+                <label> Number of Patients</label>
+                <input type="number" class ="form-control" id = "patients" placeholder="Number of patients"
+                    [(ngModel)] = "doctor.numberofpatients" name = "patients">
+            </div>
+    <br>
+        <button class = "btn btn-success" type ="submit">Submit</button><br>
+    </form>
+    <br>
+    </div></div>

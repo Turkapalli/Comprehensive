@@ -1,0 +1,23 @@
+h2{color: black;}
+.pat{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-left: 25%;
+    width: 50%;
+    padding: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #d4dbdd;
+    border: 2px solid rgb(120, 120, 120, 0.8);
+    border-radius: 10px;
+}
+.form-group{
+    font-weight: bold;
+}
+input[type=text], select {
+  
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
